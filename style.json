@@ -1,0 +1,39 @@
+{
+    "MainWindow": [
+      {
+        "title": "My SQLite App"
+      }
+    ],
+    "QSettings": [
+      {
+        "ThemeSettings": [
+          {
+            "CustomTheme": []
+          }
+        ],
+        "AppSettings": {
+          "OrganizationName": "My SQLite App",
+          "ApplicationName": "My SQLite App Company",
+          "OrganizationDomain": "My SQLite App.org"
+        }
+      }
+    ],
+    "QPushButtonGroup": [
+      {
+        "Buttons": [
+          "homeBtn",
+          "accountBtn",
+          "reportBtn",
+          "settingsBtn",
+          "helpBtn",
+          "aboutBtn"
+        ],
+        "Style": [
+          {
+            "Active": " background-color:  #1b1b27; font-weight: bold;",
+            "NotActive": "background-color: transparent; border: none;"
+          }
+        ]
+      }
+    ]
+  }
