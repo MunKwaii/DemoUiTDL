@@ -82,22 +82,22 @@ class Ui_MainWindow(object):
         self.frame_2.setObjectName("frame_2")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_2)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.pushButton_5 = QtWidgets.QPushButton(parent=self.frame_2)
-        self.pushButton_5.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.pushButton_5.setStyleSheet("QPushButton {\n"
+        self.menuBtn = QtWidgets.QPushButton(parent=self.frame_2)
+        self.menuBtn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
+        self.menuBtn.setStyleSheet("QPushButton {\n"
 "    text-align: left;\n"
 "    padding: 5px, 10px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}\n"
 "")
-        self.pushButton_5.setText("")
+        self.menuBtn.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/souce/icon/align-justify.svg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButton_5.setIcon(icon)
-        self.pushButton_5.setIconSize(QtCore.QSize(24, 24))
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.horizontalLayout_4.addWidget(self.pushButton_5, 0, QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.menuBtn.setIcon(icon)
+        self.menuBtn.setIconSize(QtCore.QSize(24, 24))
+        self.menuBtn.setObjectName("menuBtn")
+        self.horizontalLayout_4.addWidget(self.menuBtn, 0, QtCore.Qt.AlignmentFlag.AlignLeft)
         self.label = QtWidgets.QLabel(parent=self.frame_2)
         font = QtGui.QFont()
         font.setPointSize(12)
@@ -203,6 +203,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.mainBody.sizePolicy().hasHeightForWidth())
         self.mainBody.setSizePolicy(sizePolicy)
+        self.mainBody.setMinimumSize(QtCore.QSize(1115, 464))
         self.mainBody.setStyleSheet("#mainBody{\n"
 "    background-color: #27263c;\n"
 "}")
@@ -211,7 +212,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setContentsMargins(0, 9, 0, 0)
         self.horizontalLayout_2.setSpacing(0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.leftMenu = QtWidgets.QWidget(parent=self.mainBody)
+        self.leftMenu = QCustomSlideMenu(parent=self.mainBody)
         self.leftMenu.setMinimumSize(QtCore.QSize(200, 0))
         self.leftMenu.setObjectName("leftMenu")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.leftMenu)
@@ -219,6 +220,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.widget = QtWidgets.QWidget(parent=self.leftMenu)
+        self.widget.setMinimumSize(QtCore.QSize(200, 455))
         self.widget.setObjectName("widget")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout_4.setContentsMargins(20, 0, 0, 0)
@@ -239,7 +241,7 @@ class Ui_MainWindow(object):
 "}\n"
 "#homeBtn {\n"
 "    text-align: left;\n"
-"    padding: 5px, 10px;\n"
+"    padding:  8px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}\n"
@@ -257,7 +259,7 @@ class Ui_MainWindow(object):
         self.reportBtn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.reportBtn.setStyleSheet("QPushButton {\n"
 "    text-align: left;\n"
-"    padding: 5px, 10px;\n"
+"    padding: 8px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}")
@@ -270,7 +272,7 @@ class Ui_MainWindow(object):
         self.accountBtn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.accountBtn.setStyleSheet("QPushButton {\n"
 "    text-align: left;\n"
-"    padding: 5px, 10px;\n"
+"    padding: 8px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}")
@@ -290,14 +292,14 @@ class Ui_MainWindow(object):
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame_4.setObjectName("frame_4")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.frame_4)
-        self.verticalLayout_6.setContentsMargins(0, 0, 0, -1)
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_6.setSpacing(10)
         self.verticalLayout_6.setObjectName("verticalLayout_6")
         self.settingsBtn = QtWidgets.QPushButton(parent=self.frame_4)
         self.settingsBtn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.settingsBtn.setStyleSheet("QPushButton {\n"
 "    text-align: left;\n"
-"    padding: 5px, 10px;\n"
+"    padding: 8px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}")
@@ -311,7 +313,7 @@ class Ui_MainWindow(object):
         self.helpBtn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.helpBtn.setStyleSheet("QPushButton {\n"
 "    text-align: left;\n"
-"    padding: 5px, 10px;\n"
+"    padding: 8px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}")
@@ -324,7 +326,7 @@ class Ui_MainWindow(object):
         self.aboutBtn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.aboutBtn.setStyleSheet("QPushButton {\n"
 "    text-align: left;\n"
-"    padding: 5px, 10px;\n"
+"    padding: 8px;\n"
 "    border-top-left-radius: 10px;\n"
 "    border-bottom-left-radius: 10px;\n"
 "}")
@@ -380,6 +382,7 @@ class Ui_MainWindow(object):
         self.settingsBtn.setText(_translate("MainWindow", "Settings"))
         self.helpBtn.setText(_translate("MainWindow", "Help"))
         self.aboutBtn.setText(_translate("MainWindow", "About"))
+from Custom_Widgets.Widgets import QCustomSlideMenu
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ import sys
 
 from ui_interface import *
 from Custom_Widgets.Widgets import *
+from PyQt6.QtWidgets import QApplication, QWidget
 
 settings = QSettings()
 
@@ -20,7 +21,7 @@ class MainWindow(QMainWindow):
         
 #execute app
 if __name__ == "__main__":
-    app = QCoreApplication(sys.argv)
+    app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
     sys.exit(app.exec_())

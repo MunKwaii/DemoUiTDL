@@ -1,39 +1,70 @@
 {
-    "MainWindow": [
-      {
-        "title": "My SQLite App"
-      }
-    ],
-    "QSettings": [
-      {
-        "ThemeSettings": [
-          {
-            "CustomTheme": []
-          }
-        ],
-        "AppSettings": {
-          "OrganizationName": "My SQLite App",
-          "ApplicationName": "My SQLite App Company",
-          "OrganizationDomain": "My SQLite App.org"
+  "MainWindow": [
+    {
+      "title": "My SQLite App"
+    }
+  ],
+  "QSettings": [
+    {
+      "ThemeSettings": [
+        {
+          "CustomTheme": []
         }
+      ],
+      "AppSettings": {
+        "OrganizationName": "My SQLite App",
+        "ApplicationName": "My SQLite App Company",
+        "OrganizationDomain": "My SQLite App.org"
       }
-    ],
-    "QPushButtonGroup": [
-      {
-        "Buttons": [
-          "homeBtn",
-          "accountBtn",
-          "reportBtn",
-          "settingsBtn",
-          "helpBtn",
-          "aboutBtn"
-        ],
-        "Style": [
-          {
-            "Active": " background-color:  #1b1b27; font-weight: bold;",
-            "NotActive": "background-color: transparent; border: none;"
-          }
-        ]
-      }
-    ]
-  }
+    }
+  ],
+  "QPushButtonGroup": [
+    {
+      "Buttons": [
+        "homeBtn",
+        "accountBtn",
+        "reportBtn",
+        "settingsBtn",
+        "helpBtn",
+        "aboutBtn"
+      ],
+      "Style": [
+        {
+          "Active": "background-color: #1b1b27; font-weight: bold; padding: 8px; border: none;",
+          "NotActive": "background-color: transparent; padding: 8px; border: none;"
+        }
+      ]
+    }
+  ],
+  "QCustomSlideMenu": [
+    {
+      "name": "leftMenu",
+      "defaultSize": [{
+        "width": 0,
+        "height": "parent"
+      }],
+      "collapsedSize": [{
+        "width": 0,
+        "height": "parent"
+      }],
+      "expandedSize": [{
+        "width": 200,
+        "height": "parent"
+      }],
+      "toggleButton": [
+        {
+          "buttonName": "menuBtn",
+          "icons": [{
+            "whenMenuIsCollapsed": ":/souce/icon/align-justify.svg",
+            "whenMenuIsExpanded": ":/souce/icon/chevron-left.svg"
+          }]
+        }
+      ],
+      "menuTransitionAnimation": [{
+        "animationDuration": 500,
+        "animationEasingCurve": "Linear"
+        
+      }]
+    }
+  ]
+}
